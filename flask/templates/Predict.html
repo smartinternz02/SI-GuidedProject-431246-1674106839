@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body
+        {
+        background-image: url("http://www.kotak.com/content/dam/Kotak/digital-banking/insta-services/kaymall/1440X400-Online-Shopping.jpg");
+        background-size: cover;
+        }
+        h3.big
+        {
+        line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <strong><a class="navbar-brand" href="/home">Online Shoppers Intention Using ML</a></strong>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+    	<a href="/" class="btn btn-info btn-lg">Home</a>
+        <a href="/about" class="btn btn-info btn-lg">About</a>
+        <a href="/predict" class="btn btn-primary btn-lg">Predict</a>
+    </ul>
+  </div>
+</nav>
+    <div class="container">
+        <h4>
+        <form action="/pred", method="post">
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f1">Administrative</label>
+                    <input class="form-control" id="f1" name="Administrative" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f2">Administrative_Duration</label>
+                    <input class="form-control" id="f2" name="Administrative_Duration" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f3">Informational</label>
+                    <input class="form-control" id="f3" name="Informational" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f4">Informational_Duration</label>
+                    <input class="form-control" id="f4" name="Informational_Duration" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f5">ProductRelated</label>
+                    <input class="form-control" id="f5" name="ProductRelated" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f6">ProductRelated_Duration</label>
+                    <input class="form-control" id="f6" name="ProductRelated_Duration" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f7">BounceRates</label>
+                    <input class="form-control" id="f7" name="BounceRates" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f8">ExitRates</label>
+                    <input class="form-control" id="f8" name="ExitRates" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f9">PageValues</label>
+                    <input class="form-control" id="f9" name="PageValues" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f10">SpecialDay</label>
+                    <input class="form-control" id="f10" name="SpecialDay" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f11">Month</label>
+                    <input class="form-control" id="f11" name="Month" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f12">OperatingSystems</label>
+                    <input class="form-control" id="f12" name="OperatingSystems" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f13">Browser</label>
+                    <input class="form-control" id="f13" name="Browser" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f14">Region</label>
+                    <input class="form-control" id="f14" name="Region" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f15">TrafficType</label>
+                    <input class="form-control" id="f15" name="TrafficType" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f16">VisitorType</label>
+                    <input class="form-control" id="f16" name="VisitorType" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f17">Weekend</label>
+                    <input class="form-control" id="f17" name="Weekend" required="required" type="text">
+                </div>
+                <div class="col-xs-2">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+        </form>
+        <br>
+        </h4>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
